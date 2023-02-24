@@ -13,14 +13,25 @@ const render = require("./src/page-template.js");
 // TODO: Write Code to gather information about the development team members, and render the HTML file.
 function createEngineer(team) {
     inquirer.prompt([
-        // Engineer name
-        // Engineer id
-        // Engineer email
-        // Engineer GitHub username
         {
             type: 'input',
             name: 'name',
             message: "What is the engineer's name?",
+        },
+        {
+            type: 'input',
+            name: 'id',
+            message: "What is the engineer's id?",
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: "What is the engineer's email?",
+        },
+        {
+            type: 'input',
+            name: 'username',
+            message: "What is the engineer's GitHub username?",
         }
     ]).then((engineerDetails) => {
         // Initialise Engineer class to create Manager object
@@ -32,14 +43,25 @@ function createEngineer(team) {
 
 function createIntern(team) {
     inquirer.prompt([
-        // Intern name
-        // Intern id
-        // Intern email
-        // Intern school
         {
             type: 'input',
             name: 'name',
             message: "What is the intern's name?",
+        },
+        {
+            type: 'input',
+            name: 'id',
+            message: "What is the intern's id?",
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: "What is the intern's email?",
+        },
+        {
+            type: 'input',
+            name: 'school',
+            message: "What is the intern's school?",
         }
     ]).then((internDetails) => {
         // Initialise Intern class to create Manager object
@@ -89,6 +111,21 @@ function createManager(team) {
             type: 'input',
             name: 'name',
             message: "What is the team manager's name?",
+        },
+        {
+            type: 'input',
+            name: 'id',
+            message: "What is the team manager's id?",
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: "What is the team manager's email?",
+        },
+        {
+            type: 'input',
+            name: 'officeNumber',
+            message: "What is the team manager's office phone number?",
         }
     ]).then((managerDetails) => {
         // Initialise Manager class to create Manager object
