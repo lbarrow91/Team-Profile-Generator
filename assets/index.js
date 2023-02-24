@@ -80,7 +80,7 @@ function createTeam(team) {
             choices: [
                 'Engineer',
                 'Intern',
-                "I don't want to add any more team member",
+                "I don't want to add any more team members",
             ],
         }
     ]).then((choice) => {
